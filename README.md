@@ -8,8 +8,8 @@
 7. Stage files for commit - git add .
 8. Commit changes - git commit -m 'commit message here'
 9. Pull latest state from upstream - git pull upstream develop
-10. Push changes to your new branch - git push origin branch-name-here
-11.Head to your forked repository and create a pull request to the develop branch
+10. Push changes to your new branch - git push origin branch-name-here. 
+11. Head to your forked repository and create a pull request to the develop branch
 # Rules and guides
 1. Only one person per page
 2. The pages must be 100% responsive
