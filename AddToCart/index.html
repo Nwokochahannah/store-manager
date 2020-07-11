@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Add To Cart</title>
+  </head>
+  <body>
+    <!--HEADER PART OF THE PAGE-->
+    <header class="header">
+      <div class="brand-logo">
+        <a href="/"
+          ><img src="./img/SleekFeets-removebg-preview.png" alt=""
+        /></a>
+      </div>
+      <div class="navbar">
+        <div class="search-section">
+          <input
+            class="search-bar"
+            type="search"
+            name="search"
+            id="search-bar"
+            placeholder="Search..."
+          />
+          <button class="search-btn">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label for="menu-btn" class="menu-icon"
+          ><span class="nav-icon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="#">WOMEN</a></li>
+          <li><a href="#">MEN</a></li>
+          <li><a href="#">KIDS</a></li>
+          <li><a href="#">BEST SELLERS</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!--MAIN PART OF THE PAGE-->
+    <main>
+      <div class="shopping-cart">
+        <div class="cart-title">
+          Shopping List of Items
+        </div>
+
+        <div class="item">
+          <button class="cart-button">
+            <span class="like-btn" onclick="toggleLike()"></span>
+            <span class="delete-btn"></span>
+          </button>
+
+          <div class="item-image">
+            <img
+              src="./img/New-Arrival-Men-Sneakers-Unisex-shoes-running-shoes.jpg"
+              alt=""
+              style="height: 150px; width: 150px;"
+            />
+          </div>
+
+          <div class="description">
+            <span>Men Shoes</span>
+            <span>Sneakers</span>
+            <span>Black with white soles</span>
+          </div>
+
+          <div class="quantity">
+            <button class="add-btn" type="button" name="button" onclick="addValue()">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+            <input type="number" name="name" value="1" id="counter" />
+            <button class="minus-btn" type="button" name="button" onclick="minusValue()">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="total-price">$349</div>
+        </div>
+
+        <div class="item">
+          <button class="cart-button">
+            <span class="like-btn" onclick="toggleLike()"></span>
+            <span class="delete-btn"></span>
+          </button>
+
+          <div class="item-image">
+            <img
+              src="./img/68163907e511822188d1230229624e13.jpg"
+              alt=""
+              style="height: 150px; width: 150px;"
+            />
+          </div>
+
+          <div class="description">
+            <span>Women shoes</span>
+            <span>Heels</span>
+            <span>Black</span>
+          </div>
+
+          <div class="quantity">
+            <button class="add-btn" type="button" name="button" onclick="addValue()">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+            <input type="number" name="name" value="1" id="counter" />
+            <button class="minus-btn" type="button" name="button" onclick="minusValue()">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="total-price">$349</div>
+        </div>
+
+        <div class="item">
+          <button class="cart-button">
+            <span class="like-btn" onclick="toggleLike()"></span>
+            <span class="delete-btn"></span>
+          </button>
+
+          <div class="item-image">
+            <img
+              src="./img/0067d177598ebe40af6917685dac6de3.jpg"
+              alt=""
+              style="height: 150px; width: 150px;"
+            />
+          </div>
+
+          <div class="description">
+            <span>Women Shoes</span>
+            <span>Sneakers</span>
+            <span>Military style</span>
+          </div>
+
+          <div class="quantity">
+            <button class="add-btn" type="button" name="button" onclick="addValue()">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </button>
+            <input type="number" name="name" value="1" id="counter" />
+            <button class="minus-btn" type="button" name="button" onclick="minusValue()">
+              <i class="fa fa-minus" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="total-price">$349</div>
+        </div>
+
+        
+      <div class="item">
+        <button class="cart-button">
+          <span class="like-btn" onclick="toggleLike()"></span>
+          <span class="delete-btn"></span>
+        </button>
+
+        <div class="item-image">
+          <img
+            src="./img/unisex-adidas-running-lite-racer-shoes-500x500.jpg"
+            alt=""
+            style="height: 150px; width: 150px;"
+          />
+        </div>
+
+        <div class="description">
+          <span>Sneakers</span>
+          <span>Unisex</span>
+          <span>Black</span>
+        </div>
+
+        <div class="quantity">
+          <button class="add-btn" type="button" name="button" onclick="addValue()">
+            <i class="fa fa-plus" aria-hidden="true"></i>
+          </button>
+          <input type="number" name="name" value="1" id="counter" />
+          <button class="minus-btn" type="button" name="button" onclick="minusValue()">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="total-price">$349</div>
+      </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-copyright">
+          <p>&copy;2020 SleekFeet Incorporation</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/custom.js"></script>
+  </body>
+</html>
