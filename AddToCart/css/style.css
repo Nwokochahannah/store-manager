@@ -145,7 +145,7 @@ a {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border: none;
-  background-color: #1b98e0;
+  background-color: #0F59D2;
   height: 50px;
   width: 50px;
   color: #fff;
@@ -190,37 +190,6 @@ a {
   border-bottom: 1px solid #e1e8ee;
 }
 
-.cart-button {
-  position: relative;
-  margin-right: 20px;
-  padding-top: 30px;
-  border: none;
-  background-color: #fff;
-}
-
-.delete-btn,
-.like-btn {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.delete-btn {
-  width: 23px;
-  height: 18px;
-  background: url("../img/icons8-cancel-24.png") no-repeat center;
-}
-
-.like-btn {
-  position: absolute;
-  top: 9px;
-  left: 15px;
-  background: url("../img/icons8-heart-24.png");
-  width: 60px;
-  height: 60px;
-  background-size: 2900%;
-  background-repeat: no-repeat;
-}
-
 .cart-title {
   font-weight: 600;
   text-align: center;
@@ -257,10 +226,24 @@ a {
 
 .item-image,
 .quantity,
-.description {
+.description,
+.add-cart {
   width: 100%;
   text-align: center;
   margin: 6px 0;
+}
+
+.add-cart {
+  
+  padding-top: 27px;
+}
+.add-cart button {
+  vertical-align: middle;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #F6FFFF;
+  background-color: #0F59D2;
 }
 
 .quantity {
@@ -332,6 +315,7 @@ input:focus {
   padding: 10px;
   margin-top: 20px;
   color: white;
+  text-align: center;
 }
 
 /*----MEDIA QUERY FOR MEDIUM SCREENS----*/
@@ -367,10 +351,13 @@ input:focus {
   }
 
   .item-image {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 
-  .cart-button {
-    margin-right: 60px;
-  }
+  .item-image,
+.quantity,
+.description,
+.add-cart {
+  width: 50%;
+}
 }
