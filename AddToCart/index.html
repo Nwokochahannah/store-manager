@@ -13,45 +13,44 @@
   <body>
     <!--HEADER PART OF THE PAGE-->
     <header class="header">
-      <div class="brand-logo">
-        <a href="/"
-          ><img src="./img/SleekFeets-removebg-preview.png" alt=""
-        /></a>
-      </div>
-      <div class="navbar">
-        <div class="search-section">
-          <input
-            class="search-bar"
-            type="search"
-            name="search"
-            id="search-bar"
-            placeholder="Search..."
-          />
-          <button class="search-btn">
-            <i class="fa fa-search" aria-hidden="true"></i>
-          </button>
-        </div>
-        <input type="checkbox" class="menu-btn" id="menu-btn" />
-        <label for="menu-btn" class="menu-icon"
-          ><span class="nav-icon"></span
-        ></label>
-        <ul class="menu">
-          <li><a href="#">ALL</a></li>
-          <li><a href="#">WOMEN</a></li>
-          <li><a href="#">MEN</a></li>
-          <li><a href="#">KIDS</a></li>
-        </ul>
-      </div>
+      <a href="/" class="brand-logo"
+        ><img src="./img/SleekFeets-removebg-preview.png" alt=""
+      /></a>
+      <input type="checkbox" name="" id="menu-btn" class="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Products</a></li>
+      </ul>
     </header>
 
     <!--MAIN PART OF THE PAGE-->
     <main>
-      <div class="shopping-cart">
-        <div class="cart-title">
-          Shopping List of Items
-        </div>
+      <div class="search-section">
+        <input
+          class="search-bar"
+          type="search"
+          name="search"
+          id="search-bar"
+          placeholder="Search..."
+        />
+        <button class="search-btn">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="shop-menu">
+        <a href="#" onclick="displayAll()">ALL</a>
+        <a href="#" onclick="displayWomen()">WOMEN</a>
+        <a href="#" onclick="displayMen()">MEN</a>
+        <a href="#">KIDS</a>
+      </div>
 
-        <div class="item">
+      <div class="shopping-cart">
+        <div class="item" name="men">
           <div class="item-image">
             <img
               src="./img/New-Arrival-Men-Sneakers-Unisex-shoes-running-shoes.jpg"
@@ -92,7 +91,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="women">
           <div class="item-image">
             <img
               src="./img/68163907e511822188d1230229624e13.jpg"
@@ -133,7 +132,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="women">
           <div class="item-image">
             <img
               src="./img/0067d177598ebe40af6917685dac6de3.jpg"
@@ -174,7 +173,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="men">
           <div class="item-image">
             <img
               src="./img/unisex-adidas-running-lite-racer-shoes-500x500.jpg"
@@ -215,7 +214,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="men">
           <div class="item-image">
             <img
               src="./img/5a885df11d52edc5adfa84438be3e087.jpg"
@@ -256,7 +255,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="women">
           <div class="item-image">
             <img
               src="./img/ASUMER-2019-new-pumps-women-shoes-pointed-toe-shallow-high-heels-shoes-flock-prom-wedding-shoes-floc-32972390175-9044-550x550.jpeg"
@@ -297,7 +296,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="men">
           <div class="item-image">
             <img
               src="./img/LAISUMK-Autumn-Spring-Men-Shoes-Casual-Leisure-Male-Footwear-Fashion-Men-s-Flats-Suede-Leather-Flat.jpg"
@@ -338,7 +337,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="women">
           <div class="item-image">
             <img
               src="./img/eff73ad27cabdae8b48d1af04941ef95.jpg"
@@ -379,7 +378,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="men">
           <div class="item-image">
             <img
               src="./img/1acbeeff8deae87cb0124822ba6a46e3.jpg"
@@ -420,7 +419,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="women">
           <div class="item-image">
             <img
               src="./img/img_4186.jpg"
@@ -461,7 +460,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="men">
           <div class="item-image">
             <img
               src="./img/MENS-SHOES-MENS-COMFORT-PICKS-JULY-TRIPTYCH-500x500.jpg"
@@ -502,7 +501,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="women">
           <div class="item-image">
             <img
               src="./img/Women-Shoes.png"
@@ -543,7 +542,7 @@
           </div>
         </div>
 
-        <div class="item">
+        <div class="item" name="men">
           <div class="item-image">
             <img
               src="./img/2.jpg"
@@ -585,7 +584,7 @@
         </div>
       </div>
 
-      <div class="item">
+      <div class="item" name="women">
         <div class="item-image">
           <img
             src="./img/Meotina-Women-Pumps-High-Heels-Ladies-Shoes-Elegant-Pointed-Toe-Wedding-Female-Shoes-2019-Spring-Fashion.jpg_q50.webp"
@@ -626,7 +625,7 @@
         </div>
       </div>
 
-      <div class="item">
+      <div class="item" name="men">
         <div class="item-image">
           <img
             src="./img/2015-winter-shoes-for-men-casual-shoes-men-suede-boots-men-male-footwear-men-soft-leather.jpg"
