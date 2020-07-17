@@ -1,27 +1,3 @@
-let quantity = Array.from(document.getElementsByClassName("quantity"));
-let counter = document.getElementsByClassName("counter");
-let x = parseInt(counter.value);
-
-function addValue() {
-  if (x < 100) {
-    x++;
-    counter.value = x;
-  } else {
-    x = 100;
-    counter.value = x;
-  }
-}
-
-function minusValue() {
-  if (x > 1) {
-    x--;
-    counter.value = x;
-  } else {
-    x = 1;
-    counter.value = x;
-  }
-}
-
 //DISPLAY WOMEN, MEN AND KIDS WHEN BUTTON IS CLICKED
 let men = [];
 let women = [];
